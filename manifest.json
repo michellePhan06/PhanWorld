@@ -7,9 +7,9 @@
   "theme_color": "#2563eb",
   "icons": [
     {
-    "src": "icons/phanworld_test.png",
+    "src": "icons/phanworld_background.jpg",
     "sizes": "192x192",
-    "type": "image/png"
+    "type": "image/jpg"
     }
   ]
 }
