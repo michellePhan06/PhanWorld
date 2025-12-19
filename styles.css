@@ -1,29 +1,40 @@
-body {
-margin: 0;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-background: url("phanworld_background.jpg") no-repeat center center fixed;
-background-size: cover;
+#scene {
+  position: relative;
+  width: fit-content;
 }
 
+#background {
+  width: 360px;
+  height: 800px;
+}
 
-.app {
-  min-height: 100vh;
+#click-area {
+  position: absolute; /* KEY */
+  top: 340px;
+  left: 120px;
+
+  width: 115px;
+  height: 120px;
+
+  background-color: transparent; /* semi-transparent */
+
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 1rem;
+  justify-content: center;
+
+  cursor: pointer;
+  border-radius: 8px;
+
+  z-index: 2;
 }
 
+#popup-icon {
+  top: 307px;
+  left: 91px;
+  width: 177px;
+  height: 177px;
 
-.app-image {
-  max-width: 90%;
-  height: auto;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-
-button:active {
-  transform: scale(0.98);
+  position: absolute;
+  display: none;
+  z-index: 3;
 }

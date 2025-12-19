@@ -2,30 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
-  <title>My GitHub Pages App</title>
-
-
-  <!-- PWA -->
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#2563eb" />
-
-
-  <!-- iOS support -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+  <title>Phan World</title>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="app">
-  <img src="icons/phanworld_background.jpg" alt="App Image" class="app-image" />
-  </main>
 
+  <div id="scene">
+    <!-- Background -->
+    <img 
+      src="icons/phanworld_background.jpg" 
+      id="background" 
+      alt="background" 
+    />
+
+    <!-- Clickable area on top of background -->
+    <div id="click-area"></div>
+
+    <!-- Popup icon -->
+    <img 
+      src="icons/phanworld_house_icon.png" 
+      id="popup-icon" 
+      alt="House Popup" 
+    />
+  </div>
 
   <script src="app.js"></script>
 </body>
+
 </html>
