@@ -1,0 +1,41 @@
+#scene {
+  position: relative;
+  width: fit-content;
+}
+
+#background {
+  width: 360px;
+  height: 800px;
+}
+
+#click-area {
+  position: absolute; /* KEY */
+  top: 340px;
+  left: 120px;
+
+  width: 115px;
+  height: 120px;
+
+  background-color: transparent; /* semi-transparent */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  border-radius: 8px;
+
+  z-index: 2;
+}
+
+/* house icon */
+#popup-icon {
+  top: 307px;
+  left: 91px;
+  width: 177px;
+  height: 177px;
+
+  position: absolute;
+  display: none;
+  z-index: 3;
+}
