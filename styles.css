@@ -1,20 +1,25 @@
 #scene {
   position: relative;
-  width: fit-content;
+  width: 100%;
+  max-width: 900px;      /* controls desktop size */
+  margin: 0 auto;       /* center on page */
 }
 
 #background {
+  width: 100%;
+  height: auto;
   display: block;
-  max-width: 100%;
 }
 
 #click-area {
-  position: absolute; /* KEY */
-  top: 340px;
-  left: 120px;
+  position: absolute; 
+  top: 44%;
+  left: 49%;  
 
-  width: 115px;
-  height: 120px;
+  transform: translate(-50%, -50%);
+
+  width: 32%;
+  height: 17%;
 
   background-color: transparent; /* semi-transparent */
 
@@ -30,10 +35,10 @@
 
 /* house icons */
 #popup-icon {
-  top: 307px;
-  left: 91px;
-  width: 177px;
-  height: 177px;
+  top: 43.2%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 50%;
 
   position: absolute;
   display: none;
