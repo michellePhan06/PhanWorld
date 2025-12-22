@@ -17,7 +17,7 @@ clickArea.addEventListener("click", () => {
   popupIcon.style.display = "block";
 
   setTimeout(() => {
-    window.location.href = "home.html";
+    window.location.href = "./home.html";
   }, 1000);
 });
 
