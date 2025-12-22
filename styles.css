@@ -1,7 +1,7 @@
 #scene {
   position: relative;
   width: 100%;
-  max-width: 900px;      /* controls desktop size */
+  max-width: 1000px;      /* controls desktop size */
   margin: 0 auto;       /* center on page */
 }
 
@@ -21,7 +21,7 @@
   width: 32%;
   height: 17%;
 
-  background-color: transparent; /* semi-transparent */
+  background-color: rgb(164, 44, 44); /* semi-transparent */
 
   display: flex;
   align-items: center;
@@ -44,3 +44,68 @@
   display: none;
   z-index: 3;
 }
+
+/* Scrollable overlay */
+#gallery-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  height: 90%;
+
+  display: flex;              /* KEY */
+  overflow-y: auto;           /* shared scrolling */
+
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+}
+
+/* Left gallery */
+#gallery-nav {
+  width: 30%;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+#gallery-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#gallery-nav li {
+  margin-bottom: 12px;
+}
+
+#gallery-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#gallery-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Right gallery */
+#gallery-content {
+  width: 70%;
+  padding: 20px;
+}
+
+.gallery-section {
+  margin-bottom: 60px;
+}
+
+.gallery-section img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin-bottom: 10px;
+}
+
