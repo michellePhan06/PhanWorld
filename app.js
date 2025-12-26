@@ -21,3 +21,18 @@ clickArea.addEventListener("click", () => {
   }, 1000);
 });
 
+// Switch Backgrounds
+const background = document.getElementById("background");
+
+const backgrounds = [
+  "icons/phanworld_background_1.jpeg",
+  "icons/phanworld_background_2.jpeg"
+];
+
+let index = 0;
+
+setInterval(() => {
+  index = (index + 1) % backgrounds.length;
+  background.src = backgrounds[index];
+}, 800);
+
