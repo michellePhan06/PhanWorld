@@ -18,15 +18,15 @@ clickArea.addEventListener("click", () => {
 
   setTimeout(() => {
     window.location.href = "./home.html";
-  }, 1000);
+  }, 500);
 });
 
 // Switch Backgrounds
 const background = document.getElementById("background");
 
 const backgrounds = [
-  "icons/phanworld_background_1.jpeg",
-  "icons/phanworld_background_2.jpeg"
+  "icons/phanworld_background_1.jpg",
+  "icons/phanworld_background_2.jpg"
 ];
 
 let index = 0;
@@ -34,5 +34,5 @@ let index = 0;
 setInterval(() => {
   index = (index + 1) % backgrounds.length;
   background.src = backgrounds[index];
-}, 800);
+}, 1200);
 
