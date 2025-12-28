@@ -1,38 +1,34 @@
-// house click area logic
-const clickArea = document.getElementById("click-area");
-const popupIcon = document.getElementById("popup-icon");
+document.addEventListener("DOMContentLoaded", () => {
 
-if (location.hostname !== 'localhost') {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js');
-  }
-}
+  // HOME BUTTON
+  const clickArea = document.getElementById("click-area");
+  const popupIcon = document.getElementById("popup-icon");
 
-let clicked = false;
+  let clicked = false;
 
-clickArea.addEventListener("click", () => {
-  if (clicked) return;
-  clicked = true;
+  clickArea.addEventListener("click", () => {
+    if (clicked) return;
+    clicked = true;
 
-  popupIcon.style.display = "block";
+    popupIcon.style.display = "block";
 
-  setTimeout(() => {
-    window.location.href = "./home.html";
-  }, 500);
+    setTimeout(() => {
+      window.location.href = "./home.html";
+    }, 100);
+  });
+
+  // Switch Backgrounds
+  const background = document.getElementById("background");
+
+  const backgrounds = [
+    "icons/phanworld_background_1.jpg",
+    "icons/phanworld_background_2.jpg"
+  ];
+
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % backgrounds.length;
+    background.src = backgrounds[index];
+  }, 1200);
 });
-
-// Switch Backgrounds
-const background = document.getElementById("background");
-
-const backgrounds = [
-  "icons/phanworld_background_1.jpg",
-  "icons/phanworld_background_2.jpg"
-];
-
-let index = 0;
-
-setInterval(() => {
-  index = (index + 1) % backgrounds.length;
-  background.src = backgrounds[index];
-}, 1200);
-

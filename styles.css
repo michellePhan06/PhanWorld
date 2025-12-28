@@ -10,6 +10,7 @@
   height: auto;
   display: block;
   transition: opacity 0.25s ease-in-out;
+  z-index: 1;
 }
 
 .text {
@@ -29,24 +30,23 @@
   width: 35%;
   height: 17%;
 
-  background-color: rgb(164, 44, 44); /* semi-transparent */
+  background-color: transparent; /* semi-transparent */
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   cursor: pointer;
-  border-radius: 8px;
 
   z-index: 2;
 }
 
 /* house icons */
 #popup-icon {
-  top: 50.5%;
+  top: 49%;
   left: 48%; 
   transform: translate(-50%, -50%);
-  width: 85%;
+  width: 53%;
 
   position: absolute;
   display: none;
@@ -68,6 +68,41 @@
 
   background: rgba(255, 255, 255, 0.50);
   border-radius: 12px;
+}
+
+#arrow_click_area {
+  position: absolute; 
+  width: 11.5%;
+  height: 4%;
+  top: .5%;
+  left: 2%;
+  transform: translate(-10%, -0%);
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* back button */
+#back_arrow {
+  width: 13%;
+  height: 4%;
+  top: .4%;
+  left: 2%;
+  transform: translate(-10%, -0%);
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+}
+/* back button popup */
+#back_arrow_popup {
+  width: 14%;
+  height: 4.2%;
+  top: .33%;
+  left: 1.6%;
+  transform: translate(-10%, -0%);
+  position: absolute;
+  display: none;
+  z-index: 20;
 }
 
 /* Left gallery */
