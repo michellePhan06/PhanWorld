@@ -13,8 +13,17 @@
   z-index: 1;
 }
 
+.instructions {
+  align-items: center;
+  position: absolute; 
+  top: 35%;
+  left: 47.5%;  
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+}
+
 .text {
-  width: 500px;           /* max line length */
+  width: 520px;           /* max line length */
   line-height: 1.5;
   word-wrap: break-word; /* break long words if needed */
   
