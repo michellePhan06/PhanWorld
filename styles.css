@@ -29,37 +29,71 @@
   
 }
 
-#click-area {
+#house_click_area {
   position: absolute; 
   top: 50%;
-  left: 47.5%;  
-
+  left: 40%;  
   transform: translate(-50%, -50%);
-
   width: 35%;
-  height: 17%;
-
-  background-color: transparent; /* semi-transparent */
-
+  height: 16.5%;
+  background-color: blue;
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
-
   z-index: 2;
 }
 
 /* house icons */
 #popup-icon {
   top: 49%;
-  left: 48%; 
+  left: 40.5%; 
   transform: translate(-50%, -50%);
   width: 53%;
 
   position: absolute;
   display: none;
   z-index: 3;
+}
+
+/* mailbox button popup */
+#mailbox_click_area {
+  position: absolute; 
+  top: 80%;
+  left: 18%;  
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 11%;
+  background-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#mailbox_popup {
+  top: 67.5%;
+  left: 0%;
+  transform: translate(-25%, -0%);
+  position: absolute;
+  display: none;
+  z-index: 20;
+}
+
+#pe_click_area {
+  position: absolute; 
+  top: 60%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 16.5%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
 }
 
 /* Scrollable overlay */
