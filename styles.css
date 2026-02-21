@@ -36,7 +36,7 @@
   transform: translate(-50%, -50%);
   width: 35%;
   height: 16.5%;
-  background-color: blue;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,8 +46,8 @@
 
 /* house icons */
 #popup-icon {
-  top: 49%;
-  left: 40.5%; 
+  top: 49.5%;
+  left: 39.5%; 
   transform: translate(-50%, -50%);
   width: 53%;
 
@@ -64,7 +64,7 @@
   transform: translate(-50%, -50%);
   width: 35%;
   height: 11%;
-  background-color: purple;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,19 +81,43 @@
   z-index: 20;
 }
 
-#pe_click_area {
+.slanted-text {
+  display: inline-block;
+  font-size: 45px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: green;
+  position: absolute;
+  top: 67.5%;
+  left: 65%;
+  transform: rotate(-13deg) translate(-25%, 0%);
+  text-align: center;
+  width: 400px;
+}
+
+#panda_click_area {
   position: absolute; 
-  top: 60%;
-  left: 50%;  
+  top: 63%;
+  left: 72%;  
   transform: translate(-50%, -50%);
-  width: 40%;
-  height: 16.5%;
-  background-color: green;
+  width: 55%;
+  height: 20%;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: 2;
+}
+
+#panda_popup {
+  top: 67%;
+  left: 77%;
+  width: 75%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: none;
+  z-index: 20;
 }
 
 /* Scrollable overlay */
