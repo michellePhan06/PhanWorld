@@ -91,9 +91,8 @@
   left: 65%;
   transform: rotate(-13deg) translate(-25%, 0%);
   text-align: center;
-  width: 300px;
+  width: 90%;
 }
-
 
 #panda_click_area {
   position: absolute; 
