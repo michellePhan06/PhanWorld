@@ -83,16 +83,17 @@
 
 .slanted-text {
   display: inline-block;
-  font-size: 30px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 4vw;   /* scales with screen width */
+  font-family:'Trebuchet MS', Arial, sans-serif;
   color: green;
   position: absolute;
   top: 67.5%;
   left: 65%;
   transform: rotate(-13deg) translate(-25%, 0%);
   text-align: center;
-  width: 400px;
+  width: 300px;
 }
+
 
 #panda_click_area {
   position: absolute; 
@@ -137,15 +138,15 @@
 
 .fortune_text {
   display: none;
-  font-size:40px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: blue;
+  font-size: 5vw;   /* responsive */
+  font-family:'Trebuchet MS', Arial, sans-serif;
+  color: black;
   position: absolute;
   top: 40%;
   left: 52%;
   transform: rotate(-9deg) translate(-50%, -50%);
   text-align: center;
-  width: 100%;
+  width: 90%;       /* prevent overflow on phone */
 }
 
 /* Scrollable overlay */
