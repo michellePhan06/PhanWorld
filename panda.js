@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     pandaIcon.style.display = "block";
 
     setTimeout(() => {
-      window.location.href = "./mailbox.html";
+      window.location.href = "./panda.html";
     }, 100);
   
   });

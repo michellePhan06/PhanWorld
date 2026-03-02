@@ -1,5 +1,5 @@
 async function getLines() {
-  const response = await fetch('lines.txt'); // your txt file
+  const response = await fetch("text/lines.txt"); // your txt file
   const text = await response.text();
   return text.split('\n').filter(line => line.trim() !== '');
 }

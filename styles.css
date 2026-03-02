@@ -120,6 +120,34 @@
   z-index: 20;
 }
 
+#fortune_click_area {
+  position: absolute; 
+  top: 63%;
+  left: 45%;  
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 27%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.fortune_text {
+  display: none;
+  font-size:40px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: blue;
+  position: absolute;
+  top: 40%;
+  left: 52%;
+  transform: rotate(-9deg) translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
 /* Scrollable overlay */
 #gallery-container {
   position: absolute;
